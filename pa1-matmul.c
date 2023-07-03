@@ -89,7 +89,7 @@ int main() {
 
 	time_blocking_mult = ((double)t_blocking_mult) / CLOCKS_PER_SEC; // in seconds
 	printf("Blocking matrix multiplication took %f seconds to execute \n", time_blocking_mult);
-	printf("Gain in performance: %f \n\n", time_normal_mult / time_blocking_mult);
+	printf("Normalized performance: %f \n\n", time_normal_mult / time_blocking_mult);
 
 	// perform matrix multiplication with prefetching
 	t_prefetch_mult = clock();
@@ -98,7 +98,7 @@ int main() {
 
 	time_prefetch_mult = ((double)t_prefetch_mult) / CLOCKS_PER_SEC; // in seconds
 	printf("Prefetching matrix multiplication took %f seconds to execute \n", time_prefetch_mult);
-	printf("Gain in performance: %f \n\n", time_normal_mult / time_prefetch_mult);
+	printf("Normalized performance: %f \n\n", time_normal_mult / time_prefetch_mult);
 
 	// perform matrix multiplication with SIMD instructions
 	t_simd_mult = clock();
@@ -107,7 +107,7 @@ int main() {
 
 	time_simd_mult = ((double)t_simd_mult) / CLOCKS_PER_SEC; // in seconds
 	printf("SIMD matrix multiplication took %f seconds to execute \n", time_simd_mult);
-	printf("Gain in performance: %f \n\n", time_normal_mult / time_simd_mult);
+	printf("Normalized performance: %f \n\n", time_normal_mult / time_simd_mult);
 
 	// free allocated memory
 	free(A);
