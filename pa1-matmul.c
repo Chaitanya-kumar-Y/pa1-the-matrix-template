@@ -4,7 +4,7 @@
 #include <x86intrin.h> // header for intrinsic functions
 
 // dimensions of the matrices
-#define MAX_DIM     2000
+#define MAX_DIM     1000
 // block size for blocking matrix multiplication
 #define BLOCK_SIZE	100
 
