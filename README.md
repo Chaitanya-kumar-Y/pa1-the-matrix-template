@@ -1,9 +1,11 @@
-# CS683-PA1-matMul
+# PA1-The-Matrix
 
 Perform matrix multiplication using various optimization techniques:
 - blocked matrix multiplication
 - SIMD instructions
 - software prefetching
+
+and combination of these techniques.
 
 <br>
 
@@ -18,7 +20,27 @@ Perform matrix multiplication using various optimization techniques:
 <br>
 
 ---
-## Task 3: Software Prefetching Multiplication
+## Task 3: Software Prefetching
+
+<br>
+
+---
+## Bonus Task 1: Blocked Matrix Multiplication + SIMD instructions
+
+<br>
+
+---
+## Bonus Task 2: Blocked Matrix Multiplication + Software Prefetching
+
+<br>
+
+---
+## Bonus Task 3: SIMD instructions + Software Prefetching
+
+<br>
+
+---
+## Bonus Task 4: Bloced Matrix Multiplication + SIMD instructions + Software Prefetching
 
 <br>
 
