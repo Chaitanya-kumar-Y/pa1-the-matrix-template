@@ -8,8 +8,8 @@
 #include <xmmintrin.h> 		// for intrinsic functions
 
 // defines
+// NOTE: you can change this value as per your requirement
 #define BLOCK_SIZE	100		// size of the block
-							// you can change this value
 
 /**
  * @brief 		Generates random numbers between values fMin and fMax.
