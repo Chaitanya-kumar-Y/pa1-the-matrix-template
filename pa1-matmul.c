@@ -156,7 +156,7 @@ void blocking_simd_prefetch_mat_mul(double *A, double *B, double *C, int dim, in
  * @note 		DO NOT CHANGE THIS FUNCTION
  * 				DO NOT ADD OR REMOVE ANY COMMAND LINE ARGUMENTS
 */
-int main(char argc, char **argv) {
+int main(int argc, char **argv) {
 
 	if ( argc <= 1 ) {
 		printf("Pass the matrix dimension as argument :)\n\n");
@@ -167,7 +167,7 @@ int main(char argc, char **argv) {
 		int matrix_dim = atoi(argv[1]);
 
 		// variables definition and initialization
-		clock_t t_normal_mult, t_blocking_mult, t_prefetch_mult, t_simd_mult;
+		clock_t t_normal_mult, t_blocking_mult, t_prefetch_mult, t_simd_mult, t_blocking_simd_mult, t_blocking_prefetch_mult, t_simd_prefetch_mult, t_blocking_simd_prefetch_mult;
 		double time_normal_mult, time_blocking_mult, time_prefetch_mult, time_simd_mult, time_blocking_simd_mult, time_blocking_prefetch_mult, time_simd_prefetch_mult, time_blocking_simd_prefetch_mult;
 
 		double *A = (double *)malloc(matrix_dim * matrix_dim * sizeof(double));
